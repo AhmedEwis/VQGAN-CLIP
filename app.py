@@ -16,6 +16,7 @@ from PIL import Image
 from taming.models import cond_transformer, vqgan
 import taming.modules 
 from torch import nn, optim
+from kornia.geometry.transform import get_perspective_transform, warp_affine
 from torch.nn import functional as F
 from torchvision import transforms
 from torchvision.transforms import functional as TF
